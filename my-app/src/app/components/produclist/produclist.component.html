@@ -1,0 +1,15 @@
+<div class="content">
+  <div class="title"> Liste de produits </div>
+  <div class="listing">
+    <div *ngFor="let prdt of products" class="product">
+      <div class="name">
+        <span> Produit : </span>
+        <em>{{ prdt.name }}</em>
+      </div>
+      <div class="price">
+        <span> Prix : </span>
+        <em>{{ prdt.price }} $</em>
+      </div>
+    </div>
+  </div>
+</div>
